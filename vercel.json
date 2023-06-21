@@ -1,5 +1,14 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index" }
-  ]
+    {
+      "source": "/(.*)",
+      "destination": "/api/index"
+    }
+  ],
+  "functions": {
+    "api/index": {
+      "memory": 1024,
+      "maxDuration": 180
+    }
+  }
 }
