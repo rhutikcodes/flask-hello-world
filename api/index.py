@@ -12,6 +12,7 @@ def home():
     first_name =payload.get('firstName')
     last_name = payload.get('lastName')
     domain = payload.get('domain')
+    
     return find_emails({
         "firstName": first_name,
         "lastName": last_name,
